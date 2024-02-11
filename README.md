@@ -35,7 +35,7 @@ docker compose down
 Testing
 -------
 
-Add the following settings to the `snmptrapd.conf` file:
+Add the following settings to the `clients.conf` file:
 
 ```
 client any {
