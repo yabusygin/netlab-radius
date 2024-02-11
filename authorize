@@ -1,0 +1,2 @@
+alice Cleartext-Password := "alice-password", NAS-IP-Address == 127.0.0.1
+	Reply-Message := "Hello, %{User-Name}"

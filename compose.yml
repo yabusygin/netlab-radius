@@ -1,0 +1,17 @@
+name: netlab-radius-service
+services:
+  radius:
+    image: freeradius/freeradius-server:3.2.3
+    command:
+      - -X
+    volumes:
+      - type: bind
+        source: ./clients.conf
+        target: /etc/freeradius/clients.conf
+      - type: bind
+        source: ./authorize
+        target: /etc/freeradius/mods-config/files/authorize
+    ports:
+      - protocol: udp
+        target: 1812
+        published: 1812
