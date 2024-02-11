@@ -1,5 +1,5 @@
-FreeRADIUS Service for Networking Labs
-======================================
+FRADIUS Service for Networking Labs
+===================================
 
 A simple RADIUS service for networking labs. The service uses [FreeRADIUS][FreeRADIUS].
 
