@@ -35,6 +35,17 @@ docker compose down
 Testing
 -------
 
+Add the following settings to the `snmptrapd.conf` file:
+
+```
+client any {
+    ipaddr = 0.0.0.0/0
+    secret = test-client-password
+}
+```
+
+Send a test request:
+
 ```sh
-radtest alice alice-password localhost 0 client-password 0 127.0.0.1
+radtest alice alice-password localhost 0 test-client-password 0 127.0.0.1
 ```
